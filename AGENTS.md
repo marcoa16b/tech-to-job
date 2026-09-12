@@ -7,3 +7,18 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+<!-- BEGIN:project-brief -->
+
+## About this project
+
+Read `./brief-techtojob.md` to understand this project.
+
+### Stack
+
+- Next.js
+- Tailwindcss V4
+- i18n with next-intl
+- Motion for animations
+
+<!-- END:project-brief -->
