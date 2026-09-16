@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import { hasLocale } from "next-intl";
+import "@/app/globals.css";
 import { routing } from "@/i18n/routing";
-import { getMessages, getTranslations } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
+import { Header } from "@/components/shared/header";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -39,6 +45,8 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  setRequestLocale(locale);
+
   const messages = await getMessages();
 
   return (
@@ -49,7 +57,9 @@ export default async function LocaleLayout({
     >
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <Header />
+          <main>{children}</main>
+          {/* Footer */}
         </NextIntlClientProvider>
       </body>
     </html>

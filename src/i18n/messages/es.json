@@ -2,5 +2,69 @@
   "LocaleLayout": {
     "title": "TechToJob",
     "description": "Comunidad de desarrolladores y empresas tech en español."
+  },
+  "Header": {
+    "nav": {
+      "como-funciona": "Cómo funciona",
+      "talento": "Talento",
+      "empresas": "Empresas",
+      "torneos": "Torneos",
+      "networking": "Networking"
+    },
+    "language": {
+      "label": "Cambiar idioma",
+      "es": "Español",
+      "en": "English"
+    },
+    "discord": "Entrar al Discord"
+  },
+  "Hero": {
+    "eyebrow": "Únete a nuestra comunidad",
+    "headline": "¿Envías muchas candidaturas y tienes cero respuestas?",
+    "headlineHighlight": "cero respuestas",
+    "subtitle": "No te falta talento, te falta que alguien te vea antes del CV. TechToJob es una comunidad donde programadores y empresas se cruzan todos los días, no solo cuando hay vacantes.",
+    "cta": "Únete al Discord",
+    "ctaSecondary": "Ver cómo funciona",
+    "trust": {
+      "devs": "Para developers",
+      "companies": "Para empresas",
+      "lang": "En español"
+    }
+  },
+  "HowItWorks": {
+    "eyebrow": "Cómo funciona",
+    "title": "Del primer mensaje a tu próxima oportunidad",
+    "subtitle": "Cuatro pasos. Sin formularios eternos, sin ATS que descarte tu CV antes de que lo lea una persona.",
+    "steps": {
+      "one": {
+        "label": "Paso 1",
+        "title": "Entra al Discord",
+        "description": "Te presentas en #presentaciones y ya eres parte. Cuesta menos de un minuto."
+      },
+      "two": {
+        "label": "Paso 2",
+        "title": "Participa",
+        "description": "Responde dudas, comparte lo que sabes, entra a un torneo. La gente empieza a reconocerte."
+      },
+      "threeA": {
+        "label": "Paso 3a",
+        "title": "Publica tu perfil",
+        "description": "Stack, nivel y disponibilidad. Las empresas de la comunidad lo consultan cuando buscan a alguien."
+      },
+      "threeB": {
+        "label": "Paso 3b",
+        "title": "Publica tu vacante",
+        "description": "Describe lo que buscas y accede a perfiles de gente que ya ha trabajado contigo dentro."
+      },
+      "four": {
+        "label": "Paso 4",
+        "title": "Te contactan directo",
+        "description": "Hablas con la persona que decide, no con un formulario. La oportunidad sale de participar."
+      }
+    },
+    "highlight": {
+      "title": "Gratis para candidatos",
+      "description": "Y sin filtro automático que descarte tu CV antes de que lo lea alguien."
+    }
   }
 }

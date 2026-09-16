@@ -2,5 +2,69 @@
   "LocaleLayout": {
     "title": "TechToJob",
     "description": "Spanish-speaking community of developers and tech companies."
+  },
+  "Header": {
+    "nav": {
+      "como-funciona": "How it works",
+      "talento": "Talent",
+      "empresas": "Companies",
+      "torneos": "Tournaments",
+      "networking": "Networking"
+    },
+    "language": {
+      "label": "Change language",
+      "es": "Español",
+      "en": "English"
+    },
+    "discord": "Join Discord"
+  },
+  "Hero": {
+    "eyebrow": "Join our community",
+    "headline": "Sending out tons of applications and getting zero replies?",
+    "headlineHighlight": "zero replies",
+    "subtitle": "It's not a talent gap — it's a visibility gap. TechToJob is the community where developers and companies cross paths every day, not just when a role opens.",
+    "cta": "Join Discord",
+    "ctaSecondary": "See how it works",
+    "trust": {
+      "devs": "For developers",
+      "companies": "For companies",
+      "lang": "In Spanish"
+    }
+  },
+  "HowItWorks": {
+    "eyebrow": "How it works",
+    "title": "From your first message to your next opportunity",
+    "subtitle": "Four steps. No endless forms. No ATS filtering out your CV before a human ever reads it.",
+    "steps": {
+      "one": {
+        "label": "Step 1",
+        "title": "Join the Discord",
+        "description": "Say hi in #introductions and you're in. Takes less than a minute."
+      },
+      "two": {
+        "label": "Step 2",
+        "title": "Show up",
+        "description": "Answer questions, share what you know, jump into a tournament. People start recognizing you."
+      },
+      "threeA": {
+        "label": "Step 3a",
+        "title": "Post your profile",
+        "description": "Stack, level, and availability. Companies in the community check it when they're hiring."
+      },
+      "threeB": {
+        "label": "Step 3b",
+        "title": "Post your role",
+        "description": "Describe what you need and access profiles of people who've already worked with you inside."
+      },
+      "four": {
+        "label": "Step 4",
+        "title": "Direct contact",
+        "description": "Talk to the person who decides, not a form. The opportunity comes from showing up."
+      }
+    },
+    "highlight": {
+      "title": "Free for candidates",
+      "description": "And no automatic filter discarding your CV before a human reads it."
+    }
   }
 }
