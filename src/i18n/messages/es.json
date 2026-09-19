@@ -9,7 +9,8 @@
       "talento": "Talento",
       "empresas": "Empresas",
       "torneos": "Torneos",
-      "networking": "Networking"
+      "networking": "Networking",
+      "noticias": "Noticias"
     },
     "language": {
       "label": "Cambiar idioma",
@@ -66,5 +67,243 @@
       "title": "Gratis para candidatos",
       "description": "Y sin filtro automático que descarte tu CV antes de que lo lea alguien."
     }
+  },
+  "Talent": {
+    "eyebrow": "Para developers",
+    "title": "Que te encuentren a ti, no al revés",
+    "titleHighlight": "a ti",
+    "subtitle": "Publica tu perfil: stack, nivel y disponibilidad. Cuando una empresa de la comunidad busca a alguien como tú, lo consulta y te escribe directamente.",
+    "details": "Nada de currículums perdidos en un ATS. Te lee una persona, no un algoritmo que descarta por una palabra que no pusiste. No hace falta llevar años currando — si estás empezando, dilo.",
+    "cta": "Publicar mi perfil",
+    "card": {
+      "status": "Disponible",
+      "statusOpen": "Abierto a oportunidades",
+      "role": "Frontend Engineer",
+      "level": "Mid",
+      "experience": "3 años",
+      "mode": "Remoto",
+      "location": "España",
+      "stack": "Stack",
+      "stats": {
+        "views": "vistas este mes",
+        "messages": "mensajes recibidos",
+        "rating": "valoración media"
+      },
+      "badges": {
+        "noATS": "Sin ATS",
+        "humanReview": "Lo lee una persona",
+        "free": "Gratis"
+      }
+    }
+  },
+  "Companies": {
+    "eyebrow": "Para empresas",
+    "title": "Ve cómo trabaja antes de contratar",
+    "titleHighlight": "cómo trabaja",
+    "subtitle": "Publica el puesto y accede a perfiles de gente que ya participa en la comunidad: en torneos, en canales técnicos, resolviendo dudas de otros.",
+    "details": "No es un CV con adjetivos. Es ver cómo piensa alguien antes de que empiece el primer día. Menos entrevistas para descartar, más conversaciones con quien de verdad encaja.",
+    "cta": "Publicar una oferta",
+    "card": {
+      "company": "Mid-market SaaS",
+      "verified": "Empresa verificada",
+      "role": "Senior Backend Engineer",
+      "type": "Full-time · Remoto",
+      "compensation": "55–70K €",
+      "stack": "Stack",
+      "candidates": "Candidatos visibles",
+      "candidatesList": {
+        "one": "Activo en #backend",
+        "two": "Ganó torneo de API",
+        "three": "Resuelve dudas a otros"
+      },
+      "badges": {
+        "context": "Contexto real",
+        "noATS": "Sin formulario de 3 pasos",
+        "free": "Gratis al empezar"
+      }
+    }
+  },
+  "Tournaments": {
+    "eyebrow": "Torneos TechToJob",
+    "title": "Aprende compitiendo, no mirando tutoriales",
+    "titleHighlight": "compitiendo",
+    "subtitle": "Cada torneo tiene un reto real, una fecha de entrega y un jurado que evalúa con criterios públicos, no a ojo. Ganes o no, terminas con algo que enseñar en una entrevista.",
+    "lastEdition": "Último torneo · Landing en 7 días",
+    "podium": {
+      "first": "1.º",
+      "second": "2.º",
+      "third": "3.º",
+      "winner": "Ganador",
+      "finalist": "Finalista"
+    },
+    "stats": {
+      "participants": "Participantes",
+      "submissions": "Entregas",
+      "days": "Días"
+    },
+    "cta": "Ver el próximo torneo"
+  },
+  "Networking": {
+    "eyebrow": "Networking",
+    "title": "Las ofertas buenas no se encuentran, se enteran",
+    "titleHighlight": "se enteran",
+    "subtitle": "Canales por área, gente del sector respondiendo dudas en minutos, ofertas que alguien comparte porque conoce a quien contrata. Aquí es donde te enteras.",
+    "channels": {
+      "label": "Canales activos",
+      "frontend": "#frontend",
+      "backend": "#backend",
+      "devops": "#devops",
+      "data": "#data",
+      "mobile": "#mobile",
+      "qa": "#qa",
+      "ai": "#ai",
+      "startups": "#startups"
+    },
+    "cta": "Entrar al Discord"
+  },
+  "Testimonials": {
+    "eyebrow": "Lo que dice la gente",
+    "title": "Historias reales de dentro de la comunidad",
+    "subtitle": "Recogidas en el servidor, no en formulario. Cada persona enlaza a su LinkedIn.",
+    "items": {
+      "one": {
+        "quote": "Dejé de mandar CVs al vacío. En dos semanas dentro del servidor ya tenía tres llamadas con empresas que participaban en los canales.",
+        "name": "Andrea Morales",
+        "role": "Frontend · Mid"
+      },
+      "two": {
+        "quote": "Contraté a una persona que ya había resuelto dudas en el canal. Llegué a la entrevista knowing exactamente cómo pensaba.",
+        "name": "Diego Hernández",
+        "role": "CTO · Fintech"
+      },
+      "three": {
+        "quote": "El torneo me dio algo real que enseñar. En la entrevista no tuve que inventar: enseñé el repo.",
+        "name": "Pablo Reyes",
+        "role": "Junior Full-stack"
+      },
+      "four": {
+        "quote": "Lo que más valoro es que la gente responde en serio. No es otro Discord muerto de emojis.",
+        "name": "Sara Ortega",
+        "role": "Backend · Senior"
+      },
+      "five": {
+        "quote": "Encontré a mi primer mentor técnico aquí. Lleva dos años respondiéndome dudas casi a diario.",
+        "name": "Lucía Castillo",
+        "role": "Frontend · Junior"
+      },
+      "six": {
+        "quote": "Publicamos una vacante y en 48 horas ya teníamos cinco perfiles revisables. No vuelvo a LinkedIn.",
+        "name": "Carmen Vega",
+        "role": "Head of Eng · B2B SaaS"
+      },
+      "seven": {
+        "quote": "Como reclutadora, es el único canal donde los candidatos hablan con código antes de la entrevista.",
+        "name": "Iván Soto",
+        "role": "Talent Partner · Startup"
+      },
+      "eight": {
+        "quote": "Empecé contestando dudas y ahora soy maintainer de un proyecto open source que salió de aquí.",
+        "name": "Marcos Gil",
+        "role": "Data Engineer · Senior"
+      }
+    }
+  },
+  "News": {
+    "eyebrow": "Novedades",
+    "title": "Qué pasa en TechToJob",
+    "subtitle": "Resultados de torneos, cosas del sector y movimiento dentro de la comunidad.",
+    "readMore": "Leer más",
+    "featured": {
+      "category": "Torneos",
+      "date": "12 sep 2026",
+      "title": "Cierra el Torneo #2: 31 entregas y un pódium que no esperábamos",
+      "excerpt": "Siete días, una landing en producción y 31 entregas evaluadas con criterios públicos. Estos son los proyectos ganadores, las decisiones del jurado y por qué tres personas pasaron de participar a recibir ofertas esa misma semana.",
+      "readTime": "6 min de lectura"
+    },
+    "items": {
+      "one": {
+        "category": "Comunidad",
+        "date": "08 sep 2026",
+        "title": "Ya somos más de 1.200 personas en el Discord",
+        "excerpt": "Hemos cruzado un umbral simbólico: lo que empezó como un canal de chat para amigos ya es una comunidad con vida propia. Esto es lo que aprendimos por el camino."
+      },
+      "two": {
+        "category": "Sector",
+        "date": "01 sep 2026",
+        "title": "Por qué el ATS sigue fallando a candidatos junior (y qué hacer al respecto)",
+        "excerpt": "Analizamos 200 ofertas de empleo tech en España y lo que encontramos es bastante peor de lo que pensábamos. Una lectura con números reales."
+      }
+    }
+  },
+  "Newsletter": {
+    "eyebrow": "Las ofertas de la semana",
+    "title": "Un correo a la semana, ni uno más",
+    "titleHighlight": "ni uno más",
+    "subtitle": "Cada lunes: ofertas nuevas dentro de la comunidad, torneos que se abren y lo que merece la pena del sector. Sin spam. Te das de baja en un clic.",
+    "preview": {
+      "label": "Así llega un correo",
+      "subject": "Lunes 15 · 8 ofertas nuevas y un torneo que abre hoy",
+      "greeting": "Hola,",
+      "body": "Esta semana hay 8 ofertas nuevas dentro de la comunidad (3 senior, 2 mid, 3 junior) y abre el plazo para el Torneo #3 — el reto se publica hoy a las 18:00.",
+      "footer": "Si quieres dejar de recibirlo, hay un enlace al final de cada correo. Pero no es necesario: nunca mandamos más de uno a la semana."
+    },
+    "form": {
+      "placeholder": "tu@correo.com",
+      "submit": "Quiero recibirlas",
+      "consent": "Al apuntarte aceptas recibir un correo semanal. Te das de baja cuando quieras."
+    }
+  },
+  "Closing": {
+    "title": "Si has leído hasta aquí, ya sabes lo que toca",
+    "titleHighlight": "ya sabes lo que toca",
+    "subtitle": "TechToJob no es para todo el mundo. Es para quien prefiere que le vean trabajar antes que rellenar formularios. Si te identificas, te vemos dentro.",
+    "cta": "Entrar al Discord",
+    "secondary": "O seguir mirando"
+  },
+  "Footer": {
+    "tagline": "Comunidad de desarrolladores y empresas tech en español.",
+    "columns": {
+      "talent": {
+        "title": "Talento",
+        "links": {
+          "talento": "Publica tu perfil",
+          "torneos": "Torneos",
+          "networking": "Networking"
+        }
+      },
+      "companies": {
+        "title": "Empresas",
+        "links": {
+          "empresas": "Publica una oferta",
+          "torneos": "Torneos",
+          "noticias": "Resultados"
+        }
+      },
+      "community": {
+        "title": "Comunidad",
+        "links": {
+          "discord": "Entrar al Discord",
+          "testimonials": "Historias",
+          "newsletter": "Newsletter semanal",
+          "noticias": "Novedades"
+        }
+      },
+      "legal": {
+        "title": "Legal",
+        "links": {
+          "privacy": "Privacidad",
+          "terms": "Términos",
+          "contact": "Contacto"
+        }
+      }
+    },
+    "socials": {
+      "label": "Encuéntranos en",
+      "discord": "Discord",
+      "linkedin": "LinkedIn",
+      "x": "X",
+      "instagram": "Instagram"
+    },
+    "copyright": "© {year} TechToJob. Hecho por y para la comunidad."
   }
 }

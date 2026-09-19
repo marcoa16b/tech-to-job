@@ -55,6 +55,10 @@ Canales por área, gente del sector, dudas resueltas en minutos, ofertas que alg
 
 *Tiene que quedar claro:* que buena parte de los trabajos buenos no se encuentran, se enteran — y que este es el sitio donde te enteras.
 
+### NEW - Testimonials
+
+Nueva sección con cuatro o cinco tarjetas con nombre y una frase. Para el torneo van de relleno — los reales los recogeremos aquí en el servidor antes de publicar la web, y llevarán foto y enlace al LinkedIn de cada persona, así que dejad hueco para eso en el diseño.
+
 ### 7 · Noticias
 Novedades del proyecto, resultados de torneos y cosas del sector. Maqueta 3 entradas de ejemplo con título, fecha, categoría y resumen breve.
 

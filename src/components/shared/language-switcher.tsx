@@ -68,7 +68,7 @@ export function LanguageSwitcher() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -6, scale: 0.96 }}
             transition={{ type: "spring", stiffness: 380, damping: 28 }}
-            className="absolute right-0 top-full mt-2 min-w-[160px] overflow-hidden rounded-2xl border border-foreground/10 bg-background/95 p-1 shadow-lg backdrop-blur"
+            className="absolute right-0 top-full mt-2 min-w-40 overflow-hidden rounded-2xl border border-foreground/10 bg-background/95 p-1 shadow-lg backdrop-blur"
           >
             {LOCALES.map((loc) => {
               const isActive = loc.value === current;

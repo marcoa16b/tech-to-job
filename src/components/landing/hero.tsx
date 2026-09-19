@@ -89,7 +89,7 @@ export function Hero() {
                     {token.text}
                     <motion.span
                       aria-hidden="true"
-                      className="absolute -bottom-1 left-0 h-[3px] rounded-full bg-primary"
+                      className="absolute -bottom-1 left-0 h-0.75 rounded-full bg-primary"
                       initial={{ scaleX: 0, originX: 0 }}
                       animate={{ scaleX: 1 }}
                       transition={
@@ -126,7 +126,7 @@ export function Hero() {
             href="https://discord.gg/h9FFgKdkRd"
             target="_blank"
             rel="noreferrer noopener"
-            className="group inline-flex h-14 items-center justify-center gap-2.5 rounded-full bg-foreground px-7 text-base font-semibold text-background shadow-lg shadow-foreground/10 transition hover:scale-[1.02] hover:shadow-xl hover:shadow-foreground/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="group inline-flex h-14 items-center justify-center gap-2.5 rounded-full bg-foreground px-7 text-base font-semibold text-background shadow-lg shadow-foreground/10 transition hover:scale-[1.02] hover:shadow-xl hover:shadow-foreground/15 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <IconBrandDiscordFilled size={20} stroke={0} fill="currentColor" />
             {t("cta")}

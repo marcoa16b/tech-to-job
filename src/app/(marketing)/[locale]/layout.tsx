@@ -4,6 +4,7 @@ import { hasLocale } from "next-intl";
 import "@/app/globals.css";
 import { routing } from "@/i18n/routing";
 import {
+  getLocale,
   getMessages,
   getTranslations,
   setRequestLocale,
@@ -11,6 +12,7 @@ import {
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { Header } from "@/components/shared/header";
+import { Footer } from "@/components/shared/footer";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -37,15 +39,12 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function LocaleLayout({
   children,
-  params,
 }: LayoutProps<"/[locale]">) {
-  const { locale } = await params;
+  const locale = await getLocale();
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-
-  setRequestLocale(locale);
 
   const messages = await getMessages();
 
@@ -58,8 +57,8 @@ export default async function LocaleLayout({
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main>{children}</main>
-          {/* Footer */}
+          <main className="flex-1">{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

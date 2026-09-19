@@ -9,7 +9,8 @@
       "talento": "Talent",
       "empresas": "Companies",
       "torneos": "Tournaments",
-      "networking": "Networking"
+      "networking": "Networking",
+      "noticias": "News"
     },
     "language": {
       "label": "Change language",
@@ -66,5 +67,243 @@
       "title": "Free for candidates",
       "description": "And no automatic filter discarding your CV before a human reads it."
     }
+  },
+  "Talent": {
+    "eyebrow": "For developers",
+    "title": "Let them find you, not the other way around",
+    "titleHighlight": "you",
+    "subtitle": "Post your profile: stack, level, and availability. When a company in the community looks for someone like you, they check it and reach out directly.",
+    "details": "No résumés lost in an ATS. A human reads it — not an algorithm filtering you out for a keyword you didn't include. You don't need years of experience either — if you're just starting out, say so.",
+    "cta": "Post my profile",
+    "card": {
+      "status": "Available",
+      "statusOpen": "Open to opportunities",
+      "role": "Frontend Engineer",
+      "level": "Mid",
+      "experience": "3 yrs",
+      "mode": "Remote",
+      "location": "Spain",
+      "stack": "Stack",
+      "stats": {
+        "views": "views this month",
+        "messages": "messages received",
+        "rating": "average rating"
+      },
+      "badges": {
+        "noATS": "No ATS",
+        "humanReview": "Read by a human",
+        "free": "Free"
+      }
+    }
+  },
+  "Companies": {
+    "eyebrow": "For companies",
+    "title": "See how they work before you hire",
+    "titleHighlight": "how they work",
+    "subtitle": "Post the role and access profiles of people already active in the community: tournaments, technical channels, helping others out.",
+    "details": "It's not a CV full of adjectives. It's seeing how someone thinks before day one. Fewer screening interviews, more conversations with people who actually fit.",
+    "cta": "Post a role",
+    "card": {
+      "company": "Mid-market SaaS",
+      "verified": "Verified company",
+      "role": "Senior Backend Engineer",
+      "type": "Full-time · Remote",
+      "compensation": "€55–70K",
+      "stack": "Stack",
+      "candidates": "Visible candidates",
+      "candidatesList": {
+        "one": "Active in #backend",
+        "two": "Won an API tournament",
+        "three": "Helps others in chat"
+      },
+      "badges": {
+        "context": "Real context",
+        "noATS": "No 3-step form",
+        "free": "Free to start"
+      }
+    }
+  },
+  "Tournaments": {
+    "eyebrow": "TechToJob tournaments",
+    "title": "Learn by competing, not by watching tutorials",
+    "titleHighlight": "competing",
+    "subtitle": "Every tournament has a real challenge, a deadline, and a jury that evaluates with public criteria, not by gut feeling. Win or lose, you finish with something worth showing in an interview.",
+    "lastEdition": "Last tournament · Landing in 7 days",
+    "podium": {
+      "first": "1st",
+      "second": "2nd",
+      "third": "3rd",
+      "winner": "Winner",
+      "finalist": "Finalist"
+    },
+    "stats": {
+      "participants": "Participants",
+      "submissions": "Submissions",
+      "days": "Days"
+    },
+    "cta": "See the next tournament"
+  },
+  "Networking": {
+    "eyebrow": "Networking",
+    "title": "The best roles aren't found — they're heard about",
+    "titleHighlight": "heard about",
+    "subtitle": "Channels per area, people in the field answering questions in minutes, roles someone shares because they know who's hiring. This is where you hear about them.",
+    "channels": {
+      "label": "Active channels",
+      "frontend": "#frontend",
+      "backend": "#backend",
+      "devops": "#devops",
+      "data": "#data",
+      "mobile": "#mobile",
+      "qa": "#qa",
+      "ai": "#ai",
+      "startups": "#startups"
+    },
+    "cta": "Join Discord"
+  },
+  "Testimonials": {
+    "eyebrow": "What people say",
+    "title": "Real stories from inside the community",
+    "subtitle": "Gathered in the server, not through a form. Each person links to their LinkedIn.",
+    "items": {
+      "one": {
+        "quote": "I stopped sending CVs into the void. Two weeks inside the server and I had three calls with companies that were already active in the channels.",
+        "name": "Andrea Morales",
+        "role": "Mid Frontend"
+      },
+      "two": {
+        "quote": "I hired someone who'd already been answering questions in the channel. I went into the interview knowing exactly how they think.",
+        "name": "Diego Hernández",
+        "role": "CTO · Fintech"
+      },
+      "three": {
+        "quote": "The tournament gave me something real to show. I didn't have to make anything up in the interview — I showed the repo.",
+        "name": "Pablo Reyes",
+        "role": "Junior Full-stack"
+      },
+      "four": {
+        "quote": "What I value most is that people reply seriously. It's not another dead Discord full of emojis.",
+        "name": "Sara Ortega",
+        "role": "Senior Backend"
+      },
+      "five": {
+        "quote": "I found my first tech mentor here. They've been answering my questions almost daily for two years.",
+        "name": "Lucía Castillo",
+        "role": "Junior Frontend"
+      },
+      "six": {
+        "quote": "We posted a role and within 48 hours we had five reviewable profiles. I'm not going back to LinkedIn.",
+        "name": "Carmen Vega",
+        "role": "Head of Eng · B2B SaaS"
+      },
+      "seven": {
+        "quote": "As a recruiter, this is the only channel where candidates speak with code before the interview.",
+        "name": "Iván Soto",
+        "role": "Talent Partner · Startup"
+      },
+      "eight": {
+        "quote": "I started answering questions and now I'm a maintainer of an open-source project that came out of here.",
+        "name": "Marcos Gil",
+        "role": "Senior Data Engineer"
+      }
+    }
+  },
+  "News": {
+    "eyebrow": "News",
+    "title": "What's happening at TechToJob",
+    "subtitle": "Tournament results, things from the industry, and movement inside the community.",
+    "readMore": "Read more",
+    "featured": {
+      "category": "Tournaments",
+      "date": "Sep 12, 2026",
+      "title": "Tournament #2 closes: 31 submissions and a podium we didn't see coming",
+      "excerpt": "Seven days, a landing in production, and 31 submissions evaluated with public criteria. Here are the winning projects, the jury's decisions, and why three people went from participating to receiving offers that same week.",
+      "readTime": "6 min read"
+    },
+    "items": {
+      "one": {
+        "category": "Community",
+        "date": "Sep 8, 2026",
+        "title": "We've crossed 1,200 people on Discord",
+        "excerpt": "A symbolic threshold: what started as a chat channel for friends is now a community with its own life. Here's what we learned along the way."
+      },
+      "two": {
+        "category": "Industry",
+        "date": "Sep 1, 2026",
+        "title": "Why ATS keeps failing junior candidates (and what to do about it)",
+        "excerpt": "We analyzed 200 tech job postings in Spain and what we found is worse than we thought. A read with real numbers."
+      }
+    }
+  },
+  "Newsletter": {
+    "eyebrow": "The week's roles",
+    "title": "One email a week, no more",
+    "titleHighlight": "no more",
+    "subtitle": "Every Monday: new roles inside the community, tournaments opening up, and things worth your time from the industry. No spam. One-click unsubscribe.",
+    "preview": {
+      "label": "This is how one looks",
+      "subject": "Mon 15 · 8 new roles and a tournament opening today",
+      "greeting": "Hey,",
+      "body": "This week there are 8 new roles inside the community (3 senior, 2 mid, 3 junior) and the registration for Tournament #3 opens now — the challenge is published today at 6pm.",
+      "footer": "If you want to stop receiving these, there's a link at the bottom of every email. But you won't need it: we never send more than one a week."
+    },
+    "form": {
+      "placeholder": "you@email.com",
+      "submit": "Send them my way",
+      "consent": "By signing up you agree to receive one email per week. Unsubscribe whenever you want."
+    }
+  },
+  "Closing": {
+    "title": "If you've read this far, you already know what comes next",
+    "titleHighlight": "you already know what comes next",
+    "subtitle": "TechToJob isn't for everyone. It's for people who'd rather be seen working than fill out forms. If that's you, we'll see you inside.",
+    "cta": "Join Discord",
+    "secondary": "Or keep looking"
+  },
+  "Footer": {
+    "tagline": "A Spanish-speaking community of developers and tech companies.",
+    "columns": {
+      "talent": {
+        "title": "Talent",
+        "links": {
+          "talento": "Post your profile",
+          "torneos": "Tournaments",
+          "networking": "Networking"
+        }
+      },
+      "companies": {
+        "title": "Companies",
+        "links": {
+          "empresas": "Post a role",
+          "torneos": "Tournaments",
+          "noticias": "Results"
+        }
+      },
+      "community": {
+        "title": "Community",
+        "links": {
+          "discord": "Join Discord",
+          "testimonials": "Stories",
+          "newsletter": "Weekly newsletter",
+          "noticias": "News"
+        }
+      },
+      "legal": {
+        "title": "Legal",
+        "links": {
+          "privacy": "Privacy",
+          "terms": "Terms",
+          "contact": "Contact"
+        }
+      }
+    },
+    "socials": {
+      "label": "Find us on",
+      "discord": "Discord",
+      "linkedin": "LinkedIn",
+      "x": "X",
+      "instagram": "Instagram"
+    },
+    "copyright": "© {year} TechToJob. Made by and for the community."
   }
 }
