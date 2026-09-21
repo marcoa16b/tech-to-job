@@ -22,7 +22,7 @@ export async function Header() {
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 sm:py-4 lg:gap-6">
         <Link href="/" aria-label="TechToJob" className="shrink-0">
-          <figure className="relative w-28 sm:w-32 lg:w-36">
+          <figure className="relative w-28 sm:w-32 lg:w-36 rounded-full border border-foreground/10 bg-background/70 backdrop-blur px-3 py-2.5">
             <Image
               src={LogoImage}
               alt="Logo TechToJob"
