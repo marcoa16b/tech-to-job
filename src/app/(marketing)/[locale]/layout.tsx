@@ -114,15 +114,8 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     icons: {
-      icon: [
-        { url: absoluteUrl(localePath(locale, "/icon")), type: "image/png" },
-      ],
-      apple: [
-        {
-          url: absoluteUrl(localePath(locale, "/apple-icon")),
-          type: "image/png",
-        },
-      ],
+      icon: [{ url: absoluteUrl("/icon"), type: "image/png" }],
+      apple: [{ url: absoluteUrl("/apple-icon"), type: "image/png" }],
     },
     manifest: absoluteUrl("/manifest.webmanifest"),
   };
@@ -150,8 +143,9 @@ export default async function LocaleLayout({
         <link
           rel="preload"
           as="image"
-          href="/poster.jpg"
+          href="/poster.webp"
           fetchPriority="high"
+          media="(min-width: 1024px)"
         />
       </head>
       <body className="min-h-full flex flex-col">

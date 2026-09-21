@@ -2,13 +2,15 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #2F3436;
+  --foreground: #000000;
+  --muted: #2F3436;
   --primary: #84C0BF;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
   --font-sans: var(--font-sora);
   --color-primary: var(--primary);
 }

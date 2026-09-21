@@ -54,7 +54,7 @@ export function TalentSection() {
           }}
         >
           <motion.span
-            className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-foreground/80"
+            className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-muted"
             variants={{
               hidden: { opacity: 0, y: 8 },
               show: { opacity: 1, y: 0 },
@@ -92,7 +92,7 @@ export function TalentSection() {
           </motion.h2>
 
           <motion.p
-            className="mt-5 max-w-xl text-balance text-base leading-relaxed text-foreground/70 sm:text-lg lg:text-xl"
+            className="mt-5 max-w-xl text-balance text-base leading-relaxed text-muted sm:text-lg lg:text-xl"
             variants={{
               hidden: { opacity: 0, y: 10 },
               show: { opacity: 1, y: 0 },
@@ -103,7 +103,7 @@ export function TalentSection() {
           </motion.p>
 
           <motion.p
-            className="mt-4 max-w-xl text-sm leading-relaxed text-foreground/55 sm:text-base"
+            className="mt-4 max-w-xl text-sm leading-relaxed text-muted sm:text-base"
             variants={{
               hidden: { opacity: 0, y: 10 },
               show: { opacity: 1, y: 0 },

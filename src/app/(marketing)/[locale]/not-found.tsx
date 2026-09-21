@@ -16,13 +16,13 @@ export default async function NotFoundPage() {
 
   return (
     <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-3xl flex-col items-start justify-center gap-6 px-6 py-16">
-      <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-foreground/80">
+      <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-muted">
         404
       </span>
       <h1 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
         {t("title")}
       </h1>
-      <p className="max-w-xl text-balance text-base leading-relaxed text-foreground/70 sm:text-lg">
+      <p className="max-w-xl text-balance text-base leading-relaxed text-muted sm:text-lg">
         {t("description")}
       </p>
       <Link

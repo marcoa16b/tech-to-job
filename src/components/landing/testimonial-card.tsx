@@ -51,11 +51,11 @@ export function TestimonialCard({
       <IconQuote
         size={20}
         stroke={1.75}
-        className="absolute right-4 top-4 text-primary/30"
+        className="absolute right-4 top-4 text-primary"
         aria-hidden="true"
       />
 
-      <blockquote className="text-sm leading-relaxed text-foreground/85">
+      <blockquote className="text-sm leading-relaxed text-muted">
         “{quote}”
       </blockquote>
 
@@ -66,7 +66,7 @@ export function TestimonialCard({
             <div className="truncate text-sm font-semibold text-foreground">
               {name}
             </div>
-            <div className="truncate text-xs text-foreground/55">{role}</div>
+            <div className="truncate text-xs text-muted">{role}</div>
           </div>
         </div>
 
@@ -76,7 +76,7 @@ export function TestimonialCard({
             target="_blank"
             rel="noreferrer noopener"
             aria-label={`LinkedIn de ${name}`}
-            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-foreground/40 transition hover:bg-primary/10 hover:text-primary"
+            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-muted transition hover:bg-primary/10 hover:text-primary"
           >
             <IconBrandLinkedin size={16} stroke={1.75} />
           </a>

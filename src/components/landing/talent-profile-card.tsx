@@ -150,8 +150,8 @@ export function TalentProfileCard() {
                 Ana Ramírez
               </h3>
             </div>
-            <p className="text-sm text-foreground/70">{t("role")}</p>
-            <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-foreground/55">
+            <p className="text-sm text-muted">{t("role")}</p>
+            <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted">
               <span className="inline-flex items-center gap-1">
                 <IconBriefcase size={12} stroke={1.75} />
                 {t("level")} · {t("experience")}
@@ -191,7 +191,7 @@ export function TalentProfileCard() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.65 }}
         >
-          <div className="mb-2.5 flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-foreground/50">
+          <div className="mb-2.5 flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-muted">
             <IconStack2 size={14} stroke={1.75} />
             {t("stack")}
           </div>
@@ -210,7 +210,7 @@ export function TalentProfileCard() {
             {STACK.map((tech) => (
               <motion.span
                 key={tech}
-                className="rounded-full border border-primary/25 bg-primary/10 px-2.5 py-1 text-xs font-medium text-foreground/85 transition hover:border-primary/50 hover:bg-primary/15"
+                className="rounded-full border border-primary/25 bg-primary/10 px-2.5 py-1 text-xs font-medium text-muted transition hover:border-primary/50 hover:bg-primary/15"
                 variants={{
                   hidden: { opacity: 0, y: 8, scale: 0.9 },
                   show: { opacity: 1, y: 0, scale: 1 },
@@ -250,7 +250,7 @@ export function TalentProfileCard() {
               <div className="text-xl font-semibold tabular-nums text-foreground lg:text-2xl">
                 {stat.value}
               </div>
-              <div className="mt-0.5 text-[10px] uppercase tracking-wider text-foreground/50 sm:text-xs">
+              <div className="mt-0.5 text-[10px] uppercase tracking-wider text-muted sm:text-xs">
                 {stat.label}
               </div>
             </motion.div>

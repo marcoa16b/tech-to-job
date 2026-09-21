@@ -137,7 +137,7 @@ export function CompanyRoleCard() {
                 {t("verified")}
               </span>
             </div>
-            <p className="text-xs text-foreground/55">{t("type")}</p>
+            <p className="text-xs text-muted">{t("type")}</p>
           </motion.div>
         </motion.div>
 
@@ -151,7 +151,7 @@ export function CompanyRoleCard() {
           <h3 className="text-2xl font-semibold tracking-tight text-foreground lg:text-[1.7rem]">
             {t("role")}
           </h3>
-          <div className="mt-2 inline-flex items-center gap-1.5 rounded-lg bg-foreground/5 px-2.5 py-1 text-sm font-medium text-foreground/80">
+          <div className="mt-2 inline-flex items-center gap-1.5 rounded-lg bg-foreground/5 px-2.5 py-1 text-sm font-medium text-muted">
             <IconTrendingUp size={14} stroke={1.75} className="text-primary" />
             {t("compensation")}
           </div>
@@ -164,7 +164,7 @@ export function CompanyRoleCard() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.65 }}
         >
-          <div className="mb-2.5 flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-foreground/50">
+          <div className="mb-2.5 flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-muted">
             <IconStack2 size={14} stroke={1.75} />
             {t("stack")}
           </div>
@@ -183,7 +183,7 @@ export function CompanyRoleCard() {
             {STACK.map((tech) => (
               <motion.span
                 key={tech}
-                className="rounded-full border border-foreground/15 bg-foreground/3 px-2.5 py-1 text-xs font-medium text-foreground/85 transition hover:border-primary/40 hover:bg-primary/10"
+                className="rounded-full border border-foreground/15 bg-foreground/3 px-2.5 py-1 text-xs font-medium text-muted transition hover:border-primary/40 hover:bg-primary/10"
                 variants={{
                   hidden: { opacity: 0, y: 8, scale: 0.9 },
                   show: { opacity: 1, y: 0, scale: 1 },
@@ -207,7 +207,7 @@ export function CompanyRoleCard() {
           }}
         >
           <div className="mb-3 flex items-center justify-between">
-            <span className="text-xs font-medium uppercase tracking-wider text-foreground/50">
+            <span className="text-xs font-medium uppercase tracking-wider text-muted">
               {t("candidates")}
             </span>
             <span className="rounded-full bg-primary/15 px-2 py-0.5 text-xs font-semibold text-primary">
@@ -246,7 +246,7 @@ export function CompanyRoleCard() {
             {(["one", "two", "three"] as const).map((key) => (
               <motion.li
                 key={key}
-                className="flex items-center gap-2 text-xs text-foreground/70"
+                className="flex items-center gap-2 text-xs text-muted"
                 variants={{
                   hidden: { opacity: 0, x: -8 },
                   show: { opacity: 1, x: 0 },

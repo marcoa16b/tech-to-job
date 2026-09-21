@@ -70,7 +70,7 @@ export function NetworkingSection() {
           }}
         >
           <motion.span
-            className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-foreground/80"
+            className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-muted"
             variants={{
               hidden: { opacity: 0, y: 8 },
               show: { opacity: 1, y: 0 },
@@ -104,7 +104,7 @@ export function NetworkingSection() {
           </motion.h2>
 
           <motion.p
-            className="mx-auto mt-5 max-w-2xl text-balance text-base leading-relaxed text-foreground/70 sm:text-lg lg:text-xl"
+            className="mx-auto mt-5 max-w-2xl text-balance text-base leading-relaxed text-muted sm:text-lg lg:text-xl"
             variants={{
               hidden: { opacity: 0, y: 10 },
               show: { opacity: 1, y: 0 },
@@ -125,7 +125,7 @@ export function NetworkingSection() {
             show: { transition: { staggerChildren: 0.05, delayChildren: 0.2 } },
           }}
         >
-          <div className="mb-4 flex items-center justify-center gap-2 text-xs font-medium uppercase tracking-wider text-foreground/55">
+          <div className="mb-4 flex items-center justify-center gap-2 text-xs font-medium uppercase tracking-wider text-muted">
             <IconHash size={14} stroke={1.75} />
             {t("channels.label")}
           </div>
@@ -133,7 +133,7 @@ export function NetworkingSection() {
             {channels.map((channel) => (
               <motion.span
                 key={channel}
-                className="inline-flex items-center gap-1.5 rounded-full border border-foreground/15 bg-background/80 px-3 py-1.5 text-sm font-medium text-foreground/85 backdrop-blur transition hover:border-primary/40 hover:bg-primary/5"
+                className="inline-flex items-center gap-1.5 rounded-full border border-foreground/15 bg-background/80 px-3 py-1.5 text-sm font-medium text-muted backdrop-blur transition hover:border-primary/40 hover:bg-primary/5"
                 variants={{
                   hidden: { opacity: 0, y: 8 },
                   show: { opacity: 1, y: 0 },

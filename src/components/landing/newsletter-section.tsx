@@ -52,7 +52,7 @@ export function NewsletterSection() {
             }}
           >
             <motion.span
-              className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-foreground/80"
+              className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-muted"
               variants={{
                 hidden: { opacity: 0, y: 8 },
                 show: { opacity: 1, y: 0 },
@@ -89,7 +89,7 @@ export function NewsletterSection() {
             </motion.h2>
 
             <motion.p
-              className="mt-5 max-w-xl text-balance text-base leading-relaxed text-foreground/70 sm:text-lg lg:text-xl"
+              className="mt-5 max-w-xl text-balance text-base leading-relaxed text-muted sm:text-lg lg:text-xl"
               variants={{
                 hidden: { opacity: 0, y: 10 },
                 show: { opacity: 1, y: 0 },
@@ -120,7 +120,7 @@ export function NewsletterSection() {
                     <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-700">
                       <IconCheck size={16} stroke={2} />
                     </span>
-                    <span className="text-sm text-foreground/85">
+                    <span className="text-sm text-muted">
                       Listo. Te escribimos el próximo lunes.
                     </span>
                   </motion.div>
@@ -146,7 +146,7 @@ export function NewsletterSection() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder={t("form.placeholder")}
-                      className="h-14 flex-1 rounded-full border border-foreground/15 bg-background px-5 text-base text-foreground placeholder:text-foreground/50 focus-visible:border-primary focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary"
+                      className="h-14 flex-1 rounded-full border border-foreground/15 bg-background px-5 text-base text-foreground placeholder:text-muted focus-visible:border-primary focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary"
                     />
                     <button
                       type="submit"
@@ -163,7 +163,7 @@ export function NewsletterSection() {
                 )}
               </AnimatePresence>
 
-              <p className="mt-3 max-w-md text-xs text-foreground/55">
+              <p className="mt-3 max-w-md text-xs text-muted">
                 {t("form.consent")}
               </p>
             </motion.div>
@@ -176,7 +176,7 @@ export function NewsletterSection() {
             viewport={{ once: true, margin: "-10%" }}
             transition={{ duration: 0.8, delay: 0.2, ease: EASE }}
           >
-            <div className="mb-3 inline-flex items-center gap-1.5 rounded-full border border-foreground/10 bg-background/80 px-3 py-1 text-xs font-medium uppercase tracking-wider text-foreground/60 backdrop-blur">
+            <div className="mb-3 inline-flex items-center gap-1.5 rounded-full border border-foreground/10 bg-background/80 px-3 py-1 text-xs font-medium uppercase tracking-wider text-muted backdrop-blur">
               {t("preview.label")}
             </div>
 
@@ -204,13 +204,13 @@ export function NewsletterSection() {
                 <div className="flex h-2 w-2 rounded-full bg-red-400/70" />
                 <div className="flex h-2 w-2 rounded-full bg-amber-400/70" />
                 <div className="flex h-2 w-2 rounded-full bg-emerald-400/70" />
-                <span className="ml-2 truncate text-xs text-foreground/55">
+                <span className="ml-2 truncate text-xs text-muted">
                   techtojob.com/correo
                 </span>
               </div>
 
               <div className="relative mt-5">
-                <div className="text-[10px] font-medium uppercase tracking-[0.18em] text-foreground/60">
+                <div className="text-[10px] font-medium uppercase tracking-[0.18em] text-muted">
                   Asunto
                 </div>
                 <div className="mt-1 text-sm font-semibold text-foreground">
@@ -218,20 +218,20 @@ export function NewsletterSection() {
                 </div>
               </div>
 
-              <div className="relative mt-5 space-y-3 text-sm leading-relaxed text-foreground/75">
+              <div className="relative mt-5 space-y-3 text-sm leading-relaxed text-muted">
                 <p>{t("preview.greeting")}</p>
                 <p>{t("preview.body")}</p>
-                <p className="text-xs text-foreground/55">
+                <p className="text-xs text-muted">
                   {t("preview.footer")}
                 </p>
               </div>
 
               <div className="relative mt-5 flex items-center justify-between border-t border-foreground/8 pt-3">
-                <span className="inline-flex items-center gap-1 text-xs text-foreground/55">
+                <span className="inline-flex items-center gap-1 text-xs text-muted">
                   <IconMail size={12} stroke={1.75} />
                   TechToJob
                 </span>
-                <span className="text-xs text-foreground/55">
+                <span className="text-xs text-muted">
                   Lunes · semanal
                 </span>
               </div>

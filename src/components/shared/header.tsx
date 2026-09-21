@@ -38,7 +38,7 @@ export async function Header() {
               <li key={section}>
                 <Link
                   href={`/#${section}`}
-                  className="block whitespace-nowrap rounded-full px-3 py-1.5 text-sm text-foreground/80 transition hover:bg-foreground/5 hover:text-foreground"
+                  className="block whitespace-nowrap rounded-full px-3 py-1.5 text-sm text-muted transition hover:bg-foreground/5 hover:text-foreground"
                 >
                   {nav(section)}
                 </Link>

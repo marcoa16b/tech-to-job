@@ -76,7 +76,7 @@ export function ClosingSection() {
         </motion.h2>
 
         <motion.p
-          className="mx-auto mt-6 max-w-2xl text-balance text-base leading-relaxed text-foreground/70 sm:text-lg lg:text-xl"
+          className="mx-auto mt-6 max-w-2xl text-balance text-base leading-relaxed text-muted sm:text-lg lg:text-xl"
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-15%" }}
@@ -109,7 +109,7 @@ export function ClosingSection() {
 
           <Link
             href="/#como-funciona"
-            className="inline-flex h-14 items-center justify-center gap-1.5 rounded-full px-5 text-sm font-medium text-foreground/55 transition hover:text-foreground"
+            className="inline-flex h-14 items-center justify-center gap-1.5 rounded-full px-5 text-sm font-medium text-muted transition hover:text-foreground"
           >
             {t("secondary")}
           </Link>

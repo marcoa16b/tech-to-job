@@ -19,7 +19,7 @@ export function HeroBackground() {
         loop
         playsInline
         preload="metadata"
-        poster="/poster.jpg"
+        poster="/poster.webp"
         src="/hero-bg-c.webm"
       />
 

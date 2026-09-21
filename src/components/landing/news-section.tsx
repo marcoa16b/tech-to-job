@@ -10,8 +10,8 @@ type CategoryTone = "tournaments" | "community" | "industry";
 
 const CATEGORY_STYLES: Record<CategoryTone, string> = {
   tournaments: "bg-primary/15 text-primary border-primary/25",
-  community: "bg-foreground/[0.06] text-foreground/85 border-foreground/15",
-  industry: "bg-foreground/[0.04] text-foreground/65 border-foreground/10",
+  community: "bg-foreground/[0.06] text-muted border-foreground/15",
+  industry: "bg-foreground/[0.04] text-muted border-foreground/10",
 };
 
 function categoryTone(category: string): CategoryTone {
@@ -55,7 +55,7 @@ export function NewsSection() {
           }}
         >
           <motion.span
-            className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-foreground/80"
+            className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-muted"
             variants={{
               hidden: { opacity: 0, y: 8 },
               show: { opacity: 1, y: 0 },
@@ -77,7 +77,7 @@ export function NewsSection() {
           </motion.h2>
 
           <motion.p
-            className="mt-5 max-w-2xl text-balance text-base leading-relaxed text-foreground/70 sm:text-lg lg:text-xl"
+            className="mt-5 max-w-2xl text-balance text-base leading-relaxed text-muted sm:text-lg lg:text-xl"
             variants={{
               hidden: { opacity: 0, y: 10 },
               show: { opacity: 1, y: 0 },
@@ -108,10 +108,10 @@ export function NewsSection() {
               >
                 {t("featured.category")}
               </span>
-              <time className="text-xs text-foreground/55">
+              <time className="text-xs text-muted">
                 {t("featured.date")}
               </time>
-              <span className="inline-flex items-center gap-1 text-xs text-foreground/55">
+              <span className="inline-flex items-center gap-1 text-xs text-muted">
                 <IconClock size={12} stroke={1.75} />
                 {t("featured.readTime")}
               </span>
@@ -121,7 +121,7 @@ export function NewsSection() {
               {t("featured.title")}
             </h3>
 
-            <p className="relative mt-4 max-w-2xl text-base leading-relaxed text-foreground/70 lg:text-lg">
+            <p className="relative mt-4 max-w-2xl text-base leading-relaxed text-muted lg:text-lg">
               {t("featured.excerpt")}
             </p>
 
@@ -156,7 +156,7 @@ export function NewsSection() {
                 >
                   {t(`items.${key}.category` as const)}
                 </span>
-                <time className="text-xs text-foreground/55">
+                <time className="text-xs text-muted">
                   {t(`items.${key}.date` as const)}
                 </time>
               </div>
@@ -165,14 +165,14 @@ export function NewsSection() {
                 {t(`items.${key}.title` as const)}
               </h3>
 
-              <p className="mt-3 text-sm leading-relaxed text-foreground/65 lg:text-base">
+              <p className="mt-3 text-sm leading-relaxed text-muted lg:text-base">
                 {t(`items.${key}.excerpt` as const)}
               </p>
 
               <div className="mt-auto flex items-center justify-between gap-3 pt-5">
                 <a
                   href="#"
-                  className="group/link inline-flex items-center gap-1.5 text-sm font-semibold text-foreground/75 transition hover:text-primary"
+                  className="group/link inline-flex items-center gap-1.5 text-sm font-semibold text-muted transition hover:text-primary"
                 >
                   {t("readMore")}
                   <IconArrowRight

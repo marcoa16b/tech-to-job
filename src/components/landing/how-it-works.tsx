@@ -62,8 +62,8 @@ function StepCard({
         <span
           className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium tracking-wider uppercase ${
             tone === "accent"
-              ? "bg-background/10 text-background/80"
-              : "bg-foreground/5 text-foreground/55"
+              ? "bg-background/10 text-background"
+              : "bg-foreground/5 text-muted"
           }`}
         >
           {label}
@@ -86,7 +86,7 @@ function StepCard({
 
       <p
         className={`leading-relaxed ${descriptionSize} ${
-          tone === "accent" ? "text-background/75" : "text-foreground/65"
+          tone === "accent" ? "text-background" : "text-muted"
         }`}
       >
         {description}
@@ -120,13 +120,13 @@ export function HowItWorks() {
           viewport={{ once: true, margin: "-15%" }}
           transition={itemTransition}
         >
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-foreground/80">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-muted">
             {t("eyebrow")}
           </span>
           <h2 className="mt-5 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             {t("title")}
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-balance text-base leading-relaxed text-foreground/65 sm:text-lg lg:text-xl">
+          <p className="mx-auto mt-5 max-w-2xl text-balance text-base leading-relaxed text-muted sm:text-lg lg:text-xl">
             {t("subtitle")}
           </p>
         </motion.div>
@@ -234,7 +234,7 @@ export function HowItWorks() {
                 <span className="font-semibold text-foreground">
                   {t("highlight.title")}
                 </span>
-                <span className="text-sm leading-relaxed text-foreground/65">
+                <span className="text-sm leading-relaxed text-muted">
                   {t("highlight.description")}
                 </span>
               </div>

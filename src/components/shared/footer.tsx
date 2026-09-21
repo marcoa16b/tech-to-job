@@ -58,12 +58,12 @@ export async function Footer() {
                 />
               </figure>
             </Link>
-            <p className="max-w-sm text-sm leading-relaxed text-foreground/65">
+            <p className="max-w-sm text-sm leading-relaxed text-muted">
               {t("tagline")}
             </p>
 
             <div className="flex flex-col gap-2 pt-2">
-              <span className="text-xs font-medium uppercase tracking-wider text-foreground/50">
+              <span className="text-xs font-medium uppercase tracking-wider text-muted">
                 {tSocials("label")}
               </span>
               <div className="flex items-center gap-2">
@@ -74,7 +74,7 @@ export async function Footer() {
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label={tSocials(key)}
-                    className="group flex h-10 w-10 items-center justify-center rounded-full border border-foreground/10 bg-background text-foreground/65 transition hover:border-primary/40 hover:bg-primary/5 hover:text-primary"
+                    className="group flex h-10 w-10 items-center justify-center rounded-full border border-foreground/10 bg-background text-muted transition hover:border-primary/40 hover:bg-primary/5 hover:text-primary"
                   >
                     <Icon size={18} stroke={1.5} />
                   </a>
@@ -149,7 +149,7 @@ export async function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 border-t border-foreground/10 pt-6 text-xs text-foreground/55">
+        <div className="mt-14 border-t border-foreground/10 pt-6 text-xs text-muted">
           <p>{t("copyright", { year })}</p>
         </div>
       </div>
@@ -165,7 +165,7 @@ type FooterColumnProps = {
 function FooterColumn({ title, links }: FooterColumnProps) {
   return (
     <div className="flex flex-col gap-3">
-      <h3 className="text-xs font-semibold uppercase tracking-wider text-foreground/85">
+      <h3 className="text-xs font-semibold uppercase tracking-wider text-muted">
         {title}
       </h3>
       <ul className="flex flex-col gap-2">
@@ -176,14 +176,14 @@ function FooterColumn({ title, links }: FooterColumnProps) {
                 href={link.href}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-sm text-foreground/65 transition hover:text-foreground"
+                className="text-sm text-muted transition hover:text-foreground"
               >
                 {link.label}
               </a>
             ) : (
               <Link
                 href={link.href}
-                className="text-sm text-foreground/65 transition hover:text-foreground"
+                className="text-sm text-muted transition hover:text-foreground"
               >
                 {link.label}
               </Link>

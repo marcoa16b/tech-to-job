@@ -88,7 +88,7 @@ function MobilePanel({ onClose, navItems, discordLabel }: PanelProps) {
         className="fixed right-0 top-0 z-50 flex h-dvh w-[min(20rem,85vw)] flex-col bg-background shadow-2xl lg:hidden"
       >
         <div className="flex items-center justify-between border-b border-foreground/10 px-5 py-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-foreground/60">
+          <span className="text-sm font-semibold uppercase tracking-wider text-muted">
             Menú
           </span>
           <button

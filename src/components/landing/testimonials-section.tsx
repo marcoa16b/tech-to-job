@@ -58,7 +58,7 @@ export function TestimonialsSection() {
           }}
         >
           <motion.span
-            className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-foreground/80"
+            className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-muted"
             variants={{
               hidden: { opacity: 0, y: 8 },
               show: { opacity: 1, y: 0 },
@@ -80,7 +80,7 @@ export function TestimonialsSection() {
           </motion.h2>
 
           <motion.p
-            className="mx-auto mt-5 max-w-2xl text-balance text-base leading-relaxed text-foreground/70 sm:text-lg lg:text-xl"
+            className="mx-auto mt-5 max-w-2xl text-balance text-base leading-relaxed text-muted sm:text-lg lg:text-xl"
             variants={{
               hidden: { opacity: 0, y: 10 },
               show: { opacity: 1, y: 0 },

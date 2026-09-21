@@ -85,7 +85,7 @@ export function LanguageSwitcher() {
                       <span className="font-semibold tracking-wide">
                         {loc.flag}
                       </span>
-                      <span className="text-foreground/80">{t(loc.value)}</span>
+                      <span className="text-muted">{t(loc.value)}</span>
                     </span>
                     {isActive && (
                       <motion.span

@@ -43,10 +43,6 @@ export function Hero() {
     return acc;
   }, []);
 
-  const wordTransition = reduceMotion
-    ? { duration: 0 }
-    : { duration: 0.55, ease: EASE };
-
   const fadeUp = (delay: number) =>
     reduceMotion ? { duration: 0 } : { duration: 0.6, delay, ease: EASE };
 
@@ -61,7 +57,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={fadeUp(0)}
         >
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-foreground/80 backdrop-blur">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-muted backdrop-blur">
             <IconSparkles size={14} stroke={1.75} className="text-primary" />
             {t("eyebrow")}
           </span>
@@ -74,23 +70,14 @@ export function Hero() {
               return <span key={`s-${i}`}>{token.text}</span>;
             }
             return (
-              <motion.span
-                key={`w-${i}`}
-                className="inline-block"
-                initial={{ opacity: 0, y: 18 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  ...wordTransition,
-                  delay: reduceMotion ? 0 : 0.15 + i * 0.04,
-                }}
-              >
+              <span key={`w-${i}`} className="inline-block">
                 {isHighlight ? (
                   <span className="relative inline-block text-primary">
                     {token.text}
                     <motion.span
                       aria-hidden="true"
-                      className="absolute -bottom-1 left-0 h-0.75 rounded-full bg-primary"
-                      initial={{ scaleX: 0, originX: 0 }}
+                      className="absolute -bottom-1 left-0 h-0.75 origin-left rounded-full bg-primary"
+                      initial={{ scaleX: reduceMotion ? 1 : 0 }}
                       animate={{ scaleX: 1 }}
                       transition={
                         reduceMotion
@@ -102,13 +89,13 @@ export function Hero() {
                 ) : (
                   token.text
                 )}
-              </motion.span>
+              </span>
             );
           })}
         </h1>
 
         <motion.p
-          className="max-w-2xl text-balance text-base leading-relaxed text-foreground/70 sm:text-lg lg:text-xl"
+          className="max-w-2xl text-balance text-base leading-relaxed text-muted sm:text-lg lg:text-xl"
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={fadeUp(0.6)}
@@ -134,7 +121,7 @@ export function Hero() {
 
           <Link
             href="/#como-funciona"
-            className="group inline-flex h-14 items-center justify-center gap-1.5 rounded-full px-5 text-sm font-medium text-foreground/70 transition hover:text-foreground"
+            className="group inline-flex h-14 items-center justify-center gap-1.5 rounded-full px-5 text-sm font-medium text-muted transition hover:text-foreground"
           >
             {t("ctaSecondary")}
             <IconArrowDown
@@ -146,7 +133,7 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.2em] text-foreground/55 sm:text-sm"
+          className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.2em] text-muted sm:text-sm"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={fadeUp(1)}

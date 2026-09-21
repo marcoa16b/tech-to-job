@@ -57,12 +57,12 @@ function FinalistColumn({
         ? t("second")
         : t("third");
 
-  const orderStyles =
+const orderStyles =
     position === "center"
       ? {
           bar: "bg-gradient-to-b from-primary via-primary to-primary/70",
           ring: "ring-primary",
-          text: "text-primary",
+          text: "text-foreground",
           accent: "border-primary/40 bg-primary/[0.04]",
           size: "h-20 w-20 lg:h-24 lg:w-24",
           textSize: "text-lg lg:text-xl",
@@ -73,7 +73,7 @@ function FinalistColumn({
         ? {
             bar: "bg-gradient-to-b from-foreground/25 to-foreground/10",
             ring: "ring-foreground/20",
-            text: "text-foreground",
+            text: "text-background",
             accent: "border-foreground/15 bg-foreground/[0.02]",
             size: "h-16 w-16 lg:h-20 lg:w-20",
             textSize: "text-base lg:text-lg",
@@ -83,7 +83,7 @@ function FinalistColumn({
         : {
             bar: "bg-gradient-to-b from-foreground/20 to-foreground/[0.07]",
             ring: "ring-foreground/15",
-            text: "text-foreground",
+            text: "text-background",
             accent: "border-foreground/15 bg-foreground/[0.02]",
             size: "h-16 w-16 lg:h-20 lg:w-20",
             textSize: "text-base lg:text-lg",
@@ -140,7 +140,11 @@ function FinalistColumn({
         )}
 
         <div
-          className={`relative flex items-center justify-center rounded-full bg-linear-to-br from-primary to-foreground ${orderStyles.size} ${orderStyles.ring} ring-2 ring-offset-2 ring-offset-background ${orderStyles.text} text-base font-semibold text-background lg:text-lg`}
+          className={`relative flex items-center justify-center rounded-full ring-2 ring-offset-2 ring-offset-background ${orderStyles.size} ${orderStyles.ring} ${
+            position === "center"
+              ? "bg-primary"
+              : "bg-foreground"
+          } ${orderStyles.text} text-base font-semibold lg:text-lg`}
         >
           <span className="drop-shadow-sm">{finalist.initials}</span>
           {position === "center" && (
@@ -155,7 +159,7 @@ function FinalistColumn({
           <div className="text-xs font-medium text-foreground lg:text-sm">
             {finalist.name}
           </div>
-          <div className="mt-0.5 text-[10px] text-foreground/55 lg:text-xs">
+          <div className="mt-0.5 text-[10px] text-muted lg:text-xs">
             {finalist.role}
           </div>
         </div>
@@ -164,7 +168,7 @@ function FinalistColumn({
           className={`mt-2 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider ${
             position === "center"
               ? "bg-primary/15 text-primary"
-              : "bg-foreground/5 text-foreground/65"
+              : "bg-foreground/5 text-muted"
           } lg:text-xs`}
         >
           {position === "center" && (
@@ -173,7 +177,7 @@ function FinalistColumn({
           {positionLabel}
         </div>
 
-        <div className="mt-2 hidden text-center text-[10px] text-foreground/50 lg:block lg:text-xs">
+        <div className="mt-2 hidden text-center text-[10px] text-muted lg:block lg:text-xs">
           {finalist.project}
         </div>
       </motion.div>
@@ -216,21 +220,21 @@ function FinalistColumn({
           />
           {position === "center" && (
             <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center">
-              <span className="text-5xl font-bold text-background/90 lg:text-6xl">
+              <span className="text-5xl font-bold text-background lg:text-6xl">
                 1
               </span>
             </div>
           )}
           {position === "left" && (
             <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center">
-              <span className="text-3xl font-bold text-background/70 lg:text-4xl">
+              <span className="text-3xl font-bold text-background lg:text-4xl">
                 2
               </span>
             </div>
           )}
           {position === "right" && (
             <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center">
-              <span className="text-3xl font-bold text-background/70 lg:text-4xl">
+              <span className="text-3xl font-bold text-background lg:text-4xl">
                 3
               </span>
             </div>
@@ -253,7 +257,7 @@ export function Podium() {
         viewport={{ once: true, margin: "-15%" }}
         transition={{ duration: 0.5, ease: EASE }}
       >
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-foreground/10 bg-background/80 px-3 py-1 text-xs font-medium tracking-wide text-foreground/65 backdrop-blur">
+        <span className="inline-flex items-center gap-1.5 rounded-full border border-foreground/10 bg-background/80 px-3 py-1 text-xs font-medium tracking-wide text-muted backdrop-blur">
           <span className="flex h-1.5 w-1.5">
             <span className="absolute inline-flex h-1.5 w-1.5 animate-ping rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-primary" />
@@ -297,7 +301,7 @@ export function Podium() {
             <div className="text-2xl font-bold tabular-nums text-foreground lg:text-3xl">
               {stat.value}
             </div>
-            <div className="mt-0.5 text-[10px] uppercase tracking-wider text-foreground/55 lg:text-xs">
+            <div className="mt-0.5 text-[10px] uppercase tracking-wider text-muted lg:text-xs">
               {stat.label}
             </div>
           </motion.div>
