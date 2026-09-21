@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Sora } from "next/font/google";
 import { hasLocale } from "next-intl";
+import Script from "next/script";
 import "@/app/globals.css";
 import { routing } from "@/i18n/routing";
 import {
@@ -154,6 +155,9 @@ export default async function LocaleLayout({
           description={description}
           locale={typedLocale}
         />
+        <Script id="hero-video-loader" strategy="lazyOnload">
+          {`setTimeout(function(){var v=document.querySelector('video[data-hero-bg]');if(v){v.preload='metadata';v.play().catch(function(){});}},1500);`}
+        </Script>
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main className="flex-1">{children}</main>

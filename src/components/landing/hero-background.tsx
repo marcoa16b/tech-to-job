@@ -18,9 +18,10 @@ export function HeroBackground() {
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="none"
         poster="/poster.webp"
         src="/hero-bg-c.webm"
+        data-hero-bg
       />
 
       <div

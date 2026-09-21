@@ -1,6 +1,3 @@
-"use client";
-
-import { motion, useReducedMotion } from "motion/react";
 import { useTranslations } from "next-intl";
 import {
   IconBrandDiscordFilled,
@@ -13,41 +10,33 @@ import { HeroDecorator } from "./hero-decorator";
 
 export function Hero() {
   const t = useTranslations("Hero");
-  const reduceMotion = useReducedMotion();
 
   const headline = t("headline");
   const highlight = t("headlineHighlight");
   const tokens = headline.split(/(\s+)/);
   const highlightWords = highlight.toLowerCase().split(/\s+/).filter(Boolean);
 
-  const words = tokens.reduce<
-    { text: string; highlight: boolean; cursor: number }[]
-  >((acc, token) => {
-    const lastCursor = acc.length > 0 ? acc[acc.length - 1].cursor : 0;
-    const isSpace = /^\s+$/.test(token);
-    if (isSpace) {
-      acc.push({ text: token, highlight: false, cursor: lastCursor });
-      return acc;
-    }
-    const normalized = token.toLowerCase().replace(/[¿?¡!.,]/g, "");
-    const matches =
-      lastCursor < highlightWords.length &&
-      highlightWords[lastCursor] === normalized;
-    acc.push({
-      text: token,
-      highlight: matches,
-      cursor: matches ? lastCursor + 1 : lastCursor,
-    });
-    return acc;
-  }, []);
+  type Word = { text: string; highlight: boolean };
+const words: Word[] = [];
+
+tokens.forEach((token) => {
+  const isSpace = /^\s+$/.test(token);
+  if (isSpace) {
+    words.push({ text: token, highlight: false });
+    return;
+  }
+  const normalized = token.toLowerCase().replace(/[¿?¡!.,]/g, "");
+  const matches = highlightWords.includes(normalized);
+  words.push({ text: token, highlight: matches });
+});
 
   return (
-    <section className="relative isolate overflow-hidden pt-20 pb-12 sm:pt-24 sm:pb-16 lg:min-h-[calc(100vh-4rem)] lg:pt-24 lg:pb-20">
+    <section className="hero-animate relative isolate overflow-hidden pt-20 pb-12 sm:pt-24 sm:pb-16 lg:min-h-[calc(100vh-4rem)] lg:pt-24 lg:pb-20">
       <HeroBackground />
       <HeroDecorator />
 
       <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 lg:gap-7">
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-muted backdrop-blur">
+        <span className="hero-stagger-1 inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-muted backdrop-blur">
           <IconSparkles size={14} stroke={1.75} className="text-primary" />
           {t("eyebrow")}
         </span>
@@ -63,16 +52,9 @@ export function Hero() {
                 {isHighlight ? (
                   <span className="relative inline-block text-primary">
                     {token.text}
-                    <motion.span
+                    <span
                       aria-hidden="true"
-                      className="absolute -bottom-1 left-0 h-0.75 origin-left rounded-full bg-primary"
-                      initial={{ scaleX: reduceMotion ? 1 : 0 }}
-                      animate={{ scaleX: 1 }}
-                      transition={
-                        reduceMotion
-                          ? { duration: 0 }
-                          : { duration: 0.5, delay: 0.15 + i * 0.04 + 0.3 }
-                      }
+                      className="hero-stagger-4 absolute -bottom-1 left-0 h-0.75 w-full origin-left rounded-full bg-primary"
                     />
                   </span>
                 ) : (
@@ -83,11 +65,11 @@ export function Hero() {
           })}
         </h1>
 
-        <p className="max-w-2xl text-balance text-base leading-relaxed text-muted sm:text-lg lg:text-xl">
+        <p className="hero-stagger-2 max-w-2xl text-balance text-base leading-relaxed text-muted sm:text-lg lg:text-xl">
           {t("subtitle")}
         </p>
 
-        <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
+        <div className="hero-stagger-3 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
           <a
             href="https://discord.gg/h9FFgKdkRd"
             target="_blank"
@@ -111,7 +93,7 @@ export function Hero() {
           </Link>
         </div>
 
-        <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.2em] text-muted sm:text-sm">
+        <div className="hero-stagger-4 mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.2em] text-muted sm:text-sm">
           <span>{t("trust.devs")}</span>
           <span aria-hidden="true">·</span>
           <span>{t("trust.companies")}</span>
