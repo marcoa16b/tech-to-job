@@ -1,9 +1,12 @@
 import { ImageResponse } from "next/og";
 
-export const size = { width: 32, height: 32 };
-export const contentType = "image/png";
+export const runtime = "edge";
 
-export default function Icon() {
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const sizeParam = searchParams.get("size");
+  const size = sizeParam === "192" || sizeParam === "512" ? 512 : 32;
+
   return new ImageResponse(
     (
       <div
@@ -15,15 +18,16 @@ export default function Icon() {
           justifyContent: "center",
           backgroundColor: "#0a0e10",
           color: "#84C0BF",
-          fontSize: "22px",
+          fontSize: `${Math.round(size * 0.7)}px`,
           fontWeight: 800,
           letterSpacing: "-0.04em",
           fontFamily: "system-ui, sans-serif",
+          borderRadius: `${Math.round(size * 0.18)}px`,
         }}
       >
         T
       </div>
     ),
-    { ...size },
+    { width: size, height: size },
   );
 }
