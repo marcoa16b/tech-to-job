@@ -114,15 +114,8 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     icons: {
-      icon: [
-        { url: absoluteUrl(localePath(locale, "/icon")), type: "image/png" },
-      ],
-      apple: [
-        {
-          url: absoluteUrl(localePath(locale, "/apple-icon")),
-          type: "image/png",
-        },
-      ],
+      icon: [{ url: absoluteUrl("/favicon.ico"), sizes: "32x32" }],
+      apple: [{ url: absoluteUrl("/favicon.ico"), sizes: "180x180" }],
     },
     manifest: absoluteUrl("/manifest.webmanifest"),
   };
