@@ -35,7 +35,7 @@ tokens.forEach((token) => {
       <HeroBackground />
       <HeroDecorator />
 
-      <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 lg:gap-7">
+      <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 pt-10 px-6 lg:gap-7">
         <span className="hero-stagger-1 inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium tracking-wide text-muted backdrop-blur">
           <IconSparkles size={14} stroke={1.75} className="text-primary" />
           {t("eyebrow")}

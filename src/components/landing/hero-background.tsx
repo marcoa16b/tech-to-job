@@ -16,7 +16,7 @@ export function HeroBackground() {
 
       <Suspense fallback={<div />}>
         <video
-          className="absolute inset-0 hidden h-full w-full object-cover opacity-[0.08] lg:block"
+          className="absolute inset-0 h-full w-full object-cover opacity-[0.08] block"
           autoPlay
           muted
           loop
