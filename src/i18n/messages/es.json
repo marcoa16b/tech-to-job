@@ -1,7 +1,33 @@
 {
   "LocaleLayout": {
-    "title": "TechToJob",
-    "description": "Comunidad de desarrolladores y empresas tech en español."
+    "title": "TechToJob — Comunidad de developers y empresas tech en español",
+    "description": "Comunidad de developers y empresas tech en español. Torneos, ofertas y gente que te ve trabajar antes de que exista la vacante."
+  },
+  "Seo": {
+    "keywords": [
+      "comunidad developers español",
+      "developers empresas tech",
+      "ofertas trabajo programadores",
+      "torneos programación",
+      "comunidad tech hispana",
+      "empleo tech sin ATS",
+      "networking developers",
+      "talento tech español",
+      "TechToJob",
+      "comunidad discord programadores"
+    ],
+    "category": "technology",
+    "classification": "Comunidad profesional de tecnología"
+  },
+  "OgImage": {
+    "eyebrow": "Comunidad de developers y empresas tech",
+    "title": "Deja de mandar CVs al vacío",
+    "subtitle": "Construyes, participas y te ven trabajar antes de que exista una vacante."
+  },
+  "NotFound": {
+    "title": "Esa página no existe",
+    "description": "El enlace está roto, lo escribiste mal, o lo movimos. Vuelve al inicio y sigue desde ahí.",
+    "cta": "Volver al inicio"
   },
   "Header": {
     "nav": {
@@ -274,7 +300,7 @@
       "companies": {
         "title": "Empresas",
         "links": {
-          "empresas": "Publica una oferta",
+          "empresas": "Cómo contratar",
           "torneos": "Torneos",
           "noticias": "Resultados"
         }

@@ -51,11 +51,11 @@ export function Hero() {
     reduceMotion ? { duration: 0 } : { duration: 0.6, delay, ease: EASE };
 
   return (
-    <section className="relative isolate overflow-hidden pt-28 pb-20 sm:pt-32 sm:pb-28 lg:min-h-[calc(100vh-4rem)] lg:pt-40 lg:pb-32">
+    <section className="relative isolate overflow-hidden pt-20 pb-12 sm:pt-24 sm:pb-16 lg:min-h-[calc(100vh-4rem)] lg:pt-24 lg:pb-20">
       <HeroBackground />
       <HeroDecorator />
 
-      <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 px-6 lg:gap-10">
+      <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 lg:gap-7">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ export function Hero() {
           </span>
         </motion.div>
 
-        <h1 className="max-w-4xl text-balance text-5xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl xl:text-[5.25rem]">
+        <h1 className="max-w-4xl text-balance text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl xl:text-7xl">
           {words.map((token, i) => {
             const { highlight: isHighlight } = token;
             if (/^\s+$/.test(token.text)) {
@@ -108,7 +108,7 @@ export function Hero() {
         </h1>
 
         <motion.p
-          className="max-w-2xl text-balance text-lg leading-relaxed text-foreground/70 sm:text-xl lg:text-2xl"
+          className="max-w-2xl text-balance text-base leading-relaxed text-foreground/70 sm:text-lg lg:text-xl"
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={fadeUp(0.6)}
@@ -146,7 +146,7 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.2em] text-foreground/45 sm:text-sm"
+          className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.2em] text-foreground/55 sm:text-sm"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={fadeUp(1)}

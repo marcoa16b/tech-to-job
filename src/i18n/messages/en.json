@@ -1,7 +1,33 @@
 {
   "LocaleLayout": {
-    "title": "TechToJob",
-    "description": "Spanish-speaking community of developers and tech companies."
+    "title": "TechToJob — Community of developers and tech companies in Spanish",
+    "description": "Spanish-speaking community of developers and tech companies. Tournaments, jobs, and people who see you work before a role opens."
+  },
+  "Seo": {
+    "keywords": [
+      "Spanish-speaking developer community",
+      "tech companies developers",
+      "developer job offers",
+      "coding tournaments",
+      "Hispanic tech community",
+      "tech hiring without ATS",
+      "developer networking",
+      "Spanish tech talent",
+      "TechToJob",
+      "discord community programmers"
+    ],
+    "category": "technology",
+    "classification": "Professional technology community"
+  },
+  "OgImage": {
+    "eyebrow": "Community of developers and tech companies",
+    "title": "Stop sending CVs into the void",
+    "subtitle": "Build, participate, and let people see you work before a job opening even exists."
+  },
+  "NotFound": {
+    "title": "That page does not exist",
+    "description": "The link is broken, mistyped, or we moved it. Head back to the home and start from there.",
+    "cta": "Back to home"
   },
   "Header": {
     "nav": {
@@ -274,7 +300,7 @@
       "companies": {
         "title": "Companies",
         "links": {
-          "empresas": "Post a role",
+          "empresas": "How to hire",
           "torneos": "Tournaments",
           "noticias": "Results"
         }

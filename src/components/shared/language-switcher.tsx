@@ -51,7 +51,7 @@ export function LanguageSwitcher() {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        aria-label={t("label")}
+        aria-label={`${t("label")}: ${active.flag}`}
         aria-expanded={open}
         aria-haspopup="listbox"
         className="flex items-center gap-2 rounded-full border border-foreground/15 bg-background/70 px-3 py-1.5 text-sm font-medium text-foreground backdrop-blur transition hover:border-foreground/30 hover:bg-background"

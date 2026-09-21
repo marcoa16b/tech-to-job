@@ -140,11 +140,13 @@ export function NewsletterSection() {
                     <input
                       id="newsletter-email"
                       type="email"
+                      autoComplete="email"
+                      inputMode="email"
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder={t("form.placeholder")}
-                      className="h-14 flex-1 rounded-full border border-foreground/15 bg-background px-5 text-base text-foreground placeholder:text-foreground/40 focus-visible:border-primary focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary"
+                      className="h-14 flex-1 rounded-full border border-foreground/15 bg-background px-5 text-base text-foreground placeholder:text-foreground/50 focus-visible:border-primary focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-primary"
                     />
                     <button
                       type="submit"
@@ -202,13 +204,13 @@ export function NewsletterSection() {
                 <div className="flex h-2 w-2 rounded-full bg-red-400/70" />
                 <div className="flex h-2 w-2 rounded-full bg-amber-400/70" />
                 <div className="flex h-2 w-2 rounded-full bg-emerald-400/70" />
-                <span className="ml-2 truncate text-xs text-foreground/45">
+                <span className="ml-2 truncate text-xs text-foreground/55">
                   techtojob.com/correo
                 </span>
               </div>
 
               <div className="relative mt-5">
-                <div className="text-[10px] font-medium uppercase tracking-[0.18em] text-foreground/45">
+                <div className="text-[10px] font-medium uppercase tracking-[0.18em] text-foreground/60">
                   Asunto
                 </div>
                 <div className="mt-1 text-sm font-semibold text-foreground">
@@ -225,11 +227,11 @@ export function NewsletterSection() {
               </div>
 
               <div className="relative mt-5 flex items-center justify-between border-t border-foreground/8 pt-3">
-                <span className="inline-flex items-center gap-1 text-xs text-foreground/45">
+                <span className="inline-flex items-center gap-1 text-xs text-foreground/55">
                   <IconMail size={12} stroke={1.75} />
                   TechToJob
                 </span>
-                <span className="text-xs text-foreground/35">
+                <span className="text-xs text-foreground/55">
                   Lunes · semanal
                 </span>
               </div>

@@ -1,15 +1,41 @@
 import type { MetadataRoute } from "next";
-import { routing } from "@/i18n/routing";
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+import {
+  DEFAULT_LOCALE,
+  LOCALES,
+  LOCALE_LANGUAGE_MAP,
+  absoluteUrl,
+  localePath,
+} from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  return routing.locales.map((locale) => ({
-    url: `${SITE_URL}/${locale}`,
-    lastModified: now,
-    changeFrequency: "weekly",
-    priority: 1,
-  }));
+  const buildAlternates = () =>
+    Object.fromEntries(
+      LOCALES.map((l) => [
+        l === DEFAULT_LOCALE ? "es-ES" : LOCALE_LANGUAGE_MAP[l],
+        absoluteUrl(localePath(l)),
+      ]),
+    );
+
+  return [
+    {
+      url: absoluteUrl(localePath(DEFAULT_LOCALE)),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 1,
+      alternates: {
+        languages: buildAlternates(),
+      },
+    },
+    ...LOCALES.filter((locale) => locale !== DEFAULT_LOCALE).map((locale) => ({
+      url: absoluteUrl(localePath(locale)),
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+      alternates: {
+        languages: buildAlternates(),
+      },
+    })),
+  ];
 }
