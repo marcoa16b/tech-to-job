@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 export function HeroBackground() {
   return (
     <div
@@ -12,17 +14,19 @@ export function HeroBackground() {
         }}
       />
 
-      <video
-        className="absolute inset-0 hidden h-full w-full object-cover opacity-[0.08] lg:block"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="none"
-        poster="/poster.webp"
-        src="/hero-bg-c.webm"
-        data-hero-bg
-      />
+      <Suspense fallback={<div />}>
+        <video
+          className="absolute inset-0 hidden h-full w-full object-cover opacity-[0.08] lg:block"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="none"
+          poster="/poster.webp"
+          src="/hero-bg-c.webm"
+          data-hero-bg
+        />
+      </Suspense>
 
       <div
         className="absolute inset-0 opacity-[0.035]"
